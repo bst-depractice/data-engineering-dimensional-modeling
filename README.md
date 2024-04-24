@@ -6,8 +6,8 @@ The goal for this project was to get a flat file dataset and transform it to a d
 # Instructions
 You may use the pandas index feature to generte the dimension surrogate ids.
 e.g.
-   customer_dim = df[['customer']].reset_index(drop=True)
-   customer_dim['customer_id'] = customer_dim.index
+   ```customer_dim = df[['customer']].reset_index(drop=True)
+   customer_dim['customer_id'] = customer_dim.index``` 
 
 1) Setup a date dimension table and link it to pickup and dropoff date
 2) Setup a location dimension by truncating the latitude, longitude to 2 decimal points, and forming the pair as 1 location_id.
